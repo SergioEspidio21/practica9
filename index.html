@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:#d679e9 ;
+    color: #000000;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #92e4ff;
+    color: #000080;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #92e4ff;
+}
+.aside {
+    background-color: #92e4ff;
+    padding: 15px;
+    color: #000080;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #d679e9;
+    color: #000000;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+   
+}
+
+.image2{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){ 
+   .image1{
+     display: none;
+   }
+
+   .image2{
+     display: block;
+}
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Unidad 2</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <li><a href="https://sergioespidio21.github.io/practica1/">Practica 1</a></li>
+    <li><a href="https://sergioespidio21.github.io/practica2/">Practica 2</a></li>
+    <li><a href="https://sergioespidio21.github.io/practica3/?fbclid=IwAR1L7NFFo3RSr5Dc4h_S9sJH7lGl9-ChxD7WtceU0hIDTCVh0SVcQcsEUWc">Practica 3</a></li>
+    <li><a href="https://sergioespidio21.github.io/practica4.1/">Practica 4</a></li>
+    
+  </ul>
+</div>
+
+<div class="col-6">
+  <h1 style="text-align: center;">Mi CV</h1>
+    <img src="img/sergio.jpgs" width="200" height="350">
+    <h2>Dirección:</h2>
+    <iframe src="https://www.google.com/maps/@18.8025096,-97.188257,3a,75y,186.08h,82.63t,0.09r/data=!3m6!1e1!3m4!1s6qGgwaoiYtpbYkJpdCV_jA!2e0!7i13312!8i6656" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h3 style="text-align: center;">Datos</h3>
+        <h1>Datos personales:</h1>
+        <ul style="list-style-type:circle;">
+          <li style="color: rgb(134, 103, 165);"><h3>Nombre: sANCHEZ ESPIDIO SERGIO</h3></li>
+          <li style="color: rgb(231, 93, 38);"><h3>Lugar de nacimiento: RIO BLANCO VER.</h3></li>
+          <li style="color: rgb(57, 146, 168);"><h3>Fecha de nacimiento: 24/JUNIO/2002</h3></li>
+        </ul>
+        <h1>Formación academica:</h1>
+        <ul style="list-style-type:circle;">
+          <li style="color: rgb(160, 75, 245);"><h3>2014-2017 primaria guillermo martinez</h3></li>
+          <li style="color: rgb(165, 118, 18);"><h3>2017-2020 seundaria: ignacio manuel altamirano</h3></li>
+          <li style="color: rgb(245, 25, 25);"><h3>2020-2022 preparatoria: bachilleres america diurna</h3></li>
+          <li style="color: rgb(245, 25, 25);"><h3>2020-2022 universidad: instituto tecnologico de orizaba</h3></li>
+        </ul>
+        <h1>Experiencia laboral:</h1>
+        <ul style="list-style-type:circle;">
+          <li style="color: rgb(160, 75, 245);"><h3>2022-2022 Montacargista carga y descarga</h3></li>
+          <li style="color: rgb(245, 25, 25);"><h3>2022-2023 Almmacen de envios</h3></li>
+          <li style="color: rgb(152, 182, 17);"><h3>2023-2023 Ing Sistemas Computacionales</h3></li>
+        </ul>
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+    <img src="img/charizard (1).png"  width="250px" height="350px" class="image1"/>
+    <img src="img/charmander.png" width="250px" height="250px" class="image2"/>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Cambiar el tama&ntilde;o de la ventana del navegador para ver c&oacute;mo responde el contenido al redimensionamiento.</p>
+</div>
+
+</body>
+</html>
